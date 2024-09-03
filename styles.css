@@ -8,7 +8,7 @@
 }
 
 img {
-  width: 50%;
+  width: 40%;
   margin: auto;
   display: block;
   object-fit: contain;
@@ -32,9 +32,9 @@ body {
 .spinner {
   border: 8px solid #f3f3f3;
   border-top: 8px solid #520532;
-  border-radius: 50%;
-  width: 32px;
-  height: 32px;
+  border-radius: 60%;
+  width: 25px;
+  height: 25px;
   animation: spin 2s linear infinite;
 }
 
@@ -51,4 +51,5 @@ body {
   margin-top: 20px;
   font-size: 1.2em;
   text-align: center;
+  opacity: 50%;
 }
