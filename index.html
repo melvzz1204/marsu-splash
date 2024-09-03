@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marinduque State University</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- link to icon  -->
+    <link rel="icon" href="logo.png" type="image/png" sizes="16x16" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <img src="logo.png" alt="MarSU Logo" />
+      </div>
+      <div class="loading-screen">
+        <div class="spinner"></div>
+        <div class="loading-message"></div>
+      </div>
+    </div>
+    <script>
+      const messages = [
+        'Shaping futures, one click at a time...',
+        'Loading your gateway to academic excellence...',
+        'Empowering minds, please wait...',
+        'Bridging islands of knowledge, just a moment...',
+        'Marinduque State University: Your journey begins here...',
+        'Preparing a world-class education experience...',
+        'Connecting you to a community of learners...',
+        'Discovering opportunities, loading...',
+        'Unlocking your potential, please hold on...',
+        'Advancing education, one byte at a time...',
+      ];
+
+      let messageIndex = 0;
+      const messageElement = document.querySelector('.loading-message');
+
+      function showNextMessage() {
+        messageElement.textContent = messages[messageIndex];
+        messageIndex = (messageIndex + 1) % messages.length;
+      }
+
+      setInterval(showNextMessage, 1000);
+      // Initial message display
+      showNextMessage();
+    </script>
+  </body>
+</html>
